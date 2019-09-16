@@ -11,4 +11,6 @@ const dateVisted = bill["visitDate"];
 const owed = bill["amountBilled"];
 const patient = bill["patientName"];
 
-console.log(dateVisited);
+for (const value of Object.values(bill)) {
+  console.log(value);
+}
